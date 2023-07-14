@@ -2,7 +2,7 @@ import Footer from './footer'
 import NavBar from './navbar'
 import blue from './blue.webp'
 import yellow from './yellow.webp'
-import Image from 'next/Image'
+import Image from '/next/Image'
 
 const staticProducts = [
   {
