@@ -1,5 +1,8 @@
 import Footer from './footer'
 import NavBar from './navbar'
+import blue from './blue.webp'
+import yellow from './yellow.webp'
+import Image from 'next/Image'
 
 const staticProducts = [
   {
@@ -66,6 +69,15 @@ export default function Home() {
                 <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
               </a>
             ))}
+          </div>
+        </div>
+      </div>
+
+      <div className='m-0 p-0 box-border'> {/* html */}
+        <div className='flex justify-center items-center min-h-screen'> {/* body */}
+          <div className='box'> {/* box */}
+            <Image className='customImage' src={blue} alt="blue square"/>
+            <Image className='customImage' src={yellow} alt="yellow square"/>
           </div>
         </div>
       </div>
