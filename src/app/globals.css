@@ -2,31 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.box {
-  position: relative;
-  width: 400px;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-
-.box .customImage {
-  position: absolute;
-  backface-visibility: hidden;
-  transition: 1s;
-}
-
-.box .customImage:nth-child(2) {
-  transform: rotateY(180deg);
-}
-
-.box:hover .customImage:nth-child(2) {
-  transform: rotateY(0deg);
-}
-
-.box:hover .customImage:nth-child(1) {
-  transform: rotateY(-180deg);
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
