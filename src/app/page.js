@@ -10,14 +10,19 @@ export default function Home() {
       <NavBar/>
 
       <div className="flex flex-row max-h-screen">
-        <div className='pt-32 xl:pt-40 pb-32 pl-16 lg:ml-28 xl:ml-64 bg-slate-200 basis-full md:basis-3/5 space-y-16'>
+        <div className='
+          pt-32 xl:pt-40 pb-32 pl-8 md:pl-16 
+          lg:ml-28 xl:ml-48 2xl:ml-64 
+          pr-8 md:pr-0
+          bg-slate-200 basis-full md:basis-3/5 space-y-16'
+        >
 
-          <h1 className='text-6xl font-semibold'> The Premium Dog Harness </h1>
-          <h3 className='text-2xl'> Our high quality dog harnesses offers you the perfect linkage between you and your beloved dog. </h3>
+          <h1 className='text-5xl sm:text-6xl font-semibold'> The Premium Dog Harness </h1>
+          <h3 className='text-xl sm:text-2xl font-sans'> Our high quality dog harness offers you the perfect linkage between you and your beloved dog. </h3>
 
           <div className='flex flex-row'>
             <div className='basis-1/3'>
-              <svg className="scale-75 md:scale-90 lg:scale-100" fill="#000000" height="100px" width="100px" id="Layer_1" viewBox="0 0 128 128">
+              <svg className="scale-75 sm:scale-90 lg:scale-100" fill="#000000" height="100px" width="100px" id="Layer_1" viewBox="0 0 128 128">
                 <polygon points="74.1,51.5 4.3,18.4 4.3,11.8 76.4,46.3 "/>
                 <path d="M50.2,87.9h30.5v27.2c0,4.5,3.6,8.1,8.1,8.1c4.5,0,8.1-3.6,8.1-8.1V87.9c2.4,0,2.7-1.6,2.7-3.4V64.2L74,51.7H19.8l-7-4
                   c-2.2-1.3-5.1-0.5-6.4,1.8c-1.3,2.2-0.5,5.1,1.8,6.4l11,6.3v53c0,4.5,3.6,8.1,8.1,8.1c4.5,0,8.1-3.6,8.1-8.1l0-20.7L50,119.1
@@ -27,7 +32,7 @@ export default function Home() {
               <p className='pl-5'>Control</p>
             </div>
             <div className='basis-1/3'>
-              <svg fill="#000000" height="100px" width="100px" version="1.1" id="_x31_" viewBox="0 0 128 128">
+              <svg className="scale-75 sm:scale-90 lg:scale-100" fill="#000000" height="100px" width="100px" version="1.1" id="_x31_" viewBox="0 0 128 128">
                 <path id="_x31__46_" d="M35.9,13c-3.5-3.5-9.3-4.4-12.7-1.2L4.5,30.5c-2.9,2.9-1.6,7.7,2.3,8.7L10,40c8.1,2.1,16.3-2.7,18.5-10.7
                   l2-7.7c0.3-1.1,1.4-1.7,2.4-1.4c1.1,0.3,1.7,1.4,1.4,2.4L32.6,29c3.4-1.9,7.3-3,11.5-3h4.7L35.9,13z"/>
                 <path id="_x31__45_" d="M92.1,13c3.5-3.5,9.3-4.4,12.7-1.2l18.6,18.7c2.9,2.9,1.6,7.7-2.3,8.7l-3.2,0.8c-8.1,2.1-16.3-2.7-18.5-10.7
@@ -46,7 +51,7 @@ export default function Home() {
               <p className='pl-5'>Comfort</p>
             </div>
             <div className='basis-1/3'>
-              <svg fill="#000000" id="Style" width="100px" height="100px" viewBox="0 0 202 256">
+              <svg className="scale-75 sm:scale-90 lg:scale-100" fill="#000000" id="Style" width="100px" height="100px" viewBox="0 0 202 256">
                 <path d="M108.856,39.664c0.158,0.029,0.315,0.044,0.472,0.062c1.44,4.056,3.228,7.935,5.345,11.592l-4.533,5.396l-63.673-7.203
                   L51.77,2l64.118,7.107l13.048,25.568l-10.864,12.671c-1.527-2.81-2.854-5.749-3.961-8.802c1.496-1.025,2.6-2.622,2.953-4.546
                   c0.702-3.831-1.834-7.506-5.665-8.208c-3.831-0.702-7.506,1.834-8.208,5.665C102.489,35.287,105.025,38.961,108.856,39.664z
@@ -77,7 +82,7 @@ export default function Home() {
           </button>
 
         </div>
-        <div className='hidden md:block py-32 lg:mr-28 xl:mr-64 bg-slate-200 basis-2/5'>
+        <div className='hidden md:block py-32 lg:mr-28 xl:mr-48 2xl:mr-64  bg-slate-200 basis-2/5'>
           <Image className='object-contain mx-auto' src={dog_img} alt={"dog with harness"}></Image>
         </div>
       </div>
