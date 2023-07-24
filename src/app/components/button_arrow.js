@@ -4,7 +4,7 @@ import arrow from '../../../public/graphics/arrow.svg'
 
 export default function ButtonAndArrow() {
   return (
-    <div className='flex justify-start items-end'>
+    <div className='flex justify-start items-end pb-32'>
       <button 
         className='
           rounded-lg max-h-16 lg:max-h-20
