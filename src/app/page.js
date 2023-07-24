@@ -46,7 +46,7 @@ function Body() {
 export default function Home() {
   return (
     <main className="bg-white">
-      <div className='relative isolate'>
+      <div className='relative isolate text-slate-900'>
         <Circle/>
         <Header/>
         <Body/>
