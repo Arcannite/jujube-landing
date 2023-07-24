@@ -6,11 +6,11 @@ import Icons from './components/icons.js'
 import ButtonAndArrow from './components/button_arrow.js'
 import Circle from './components/circle.js'
 
-import catImage from '../../public/graphics/cat.webp'
+import dogImage from '../../public/graphics/dog.webp'
 
 function Body() {
   return (
-    <div className="relative flex flex-row min-h-screen">
+    <div className="relative flex flex-row min-h-screen motion-safe:animate-fadeIn">
       
       <div className='
         pt-32 xl:pt-40 pb-8 pl-8 sm:pl-16
@@ -19,8 +19,13 @@ function Body() {
         bg-none basis-5/6 lg:basis-7/12 space-y-6 lg:space-y-12'
       >
 
-        <h1 className='text-5xl lg:text-6xl font-semibold w-3/4'> The Premium Dog Harness </h1>
-        <h3 className='text-xl md:text-2xl font-sans w-3/4'> Our high quality dog harness offers you the perfect linkage between you and your beloved dog. </h3>
+        <h1 className='text-3xl sm:text-5xl lg:text-6xl font-semibold w-3/4 motion-safe:animate-slideInFromLeft'>
+          The Premium Dog&nbsp;Harness
+          {/* Not having this nbsp would make it so that on some viewports part of the shop button is pushed out of view */}
+        </h1>
+        <h3 className='text-lg sm:text-xl lg:text-2xl font-sans w-3/4 motion-safe:animate-slideInFromLeft'>
+          Our high quality dog harness offers you the perfect linkage between you and your beloved dog.
+        </h3>
         
         <Icons/>
 
@@ -31,7 +36,7 @@ function Body() {
       <div className='hidden lg:block basis-2/12'></div> {/* Just for formatting */}
 
       <div className='absolute max-w-[40%] right-0 md:static md:basis-1/2 lg:basis-1/4'>
-        <Image className='mt-32' src={catImage} alt="Cat peeking"/>
+        <Image className='mt-32' src={dogImage} alt="Dog peeking"/>
       </div>
 
     </div>

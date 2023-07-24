@@ -7,6 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: { 
+        slideInFromLeft: {
+          '0%': { transform: 'translateX(-100%)'},
+          '100%': { transform: 'translateX(0)'},
+        }, 
+        fadeIn: {
+          '0%': { opacity: 0, },
+          '100%': { opacity: 1, },
+        }
+      },
+      animation: {
+        slideInFromLeft: 'slideInFromLeft 1s ease-in-out 1',
+        fadeIn: 'fadeIn 1s ease-in-out 1'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
