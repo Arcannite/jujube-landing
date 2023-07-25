@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className='absolute h-32 bg-none w-screen grid grid-cols-2 gap-4 text-sm sm:text-base'>
+    <div className='absolute h-32 bg-none w-screen grid grid-cols-2 gap-4 text-sm sm:text-base bg-none'>
       <div className='pt-12 ml-8 sm:ml-16 lg:ml-44 xl:ml-64 2xl:ml-80'>
         <div> Pet shop <b>Jujube</b> </div>
         <div> By Stefano </div>

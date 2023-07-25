@@ -26,6 +26,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+        'tall': { 'raw': '(min-height: 840px)' },
+        'short': { 'raw': '(min-height: 630px)' },
+        // => @media (min-height: 800px) { ... }
+      },
+      gridTemplateRows: {
+        '[auto,auto,1fr]': 'auto auto 1fr',
+      },
     },
   },
   plugins: [
