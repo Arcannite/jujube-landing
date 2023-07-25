@@ -1,5 +1,7 @@
 import './globals.css'
 import { PT_Serif } from 'next/font/google'
+import Header from './components/header.js'
+import Footer from './components/footer.js'
 
 const pt_serif = PT_Serif({
   subsets: ['latin'],
@@ -14,7 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={pt_serif.className}>{children}</body>
+      <body className={pt_serif.className}>
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }

@@ -1,10 +1,10 @@
-import { product } from './product_description.js'
+import { product } from '../product_descriptions.js'
 
 export default function Example({ params }) {
 
   return (
     <div className="bg-white">
-      <div className="pt-6">
+      <div className="pt-32 xl:pt-40">
 
         {/* Image gallery */}
         <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">

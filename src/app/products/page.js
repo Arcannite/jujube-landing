@@ -1,38 +1,14 @@
 import Circle from '../components/circle.js'
-import Header from '../components/header.js'
-import Footer from '../components/footer.js'
 
 import Link from 'next/link'
 
-const callouts = [
-  {
-    name: 'Desk and Office',
-    description: 'Work from home accessories',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    slug: 'DeskNOffice',
-  },
-  {
-    name: 'Self-Improvement',
-    description: 'Journals and note-taking',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-    slug: 'SelfImprovement',
-  },
-  {
-    name: 'Travel',
-    description: 'Daily commute essentials',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-    slug: 'Travel',
-  },
-]
+import { callouts } from './product_descriptions.js'
 
 function Contents() {
   return (
-    <div className="bg-none min-h-screen">
+    <div className="relative bg-none min-h-screen">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none py-32 sm:py-40">
           <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
@@ -66,9 +42,7 @@ export default function Home() {
     <main className="bg-white">
       <div className='relative isolate text-slate-900'>
         <Circle/>
-        <Header/>
         <Contents/>
-        <Footer/>
       </div>
     </main>
   )

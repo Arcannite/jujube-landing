@@ -1,7 +1,5 @@
 import Image from 'next/image'
 
-import Header from './components/header.js'
-import Footer from './components/footer.js'
 import Icons from './components/icons.js'
 import ButtonAndArrow from './components/button_arrow.js'
 import Circle from './components/circle.js'
@@ -10,7 +8,7 @@ import dogImage from '../../public/graphics/dogPeeking.webp'
 
 function Body() {
   return (
-    <div className="relative flex flex-row min-h-screen">
+    <div className="relative flex flex-row min-h-screen z-0">
       
       <div className='
         pt-32 xl:pt-40 pb-8 pl-8 sm:pl-16
@@ -48,9 +46,7 @@ export default function Home() {
     <main className="bg-white">
       <div className='relative isolate text-slate-900'>
         <Circle/>
-        <Header/>
         <Body/>
-        <Footer/>
       </div>
     </main>
   )
